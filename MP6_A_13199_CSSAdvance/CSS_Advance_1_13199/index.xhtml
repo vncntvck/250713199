@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Formulir Registrasi Data Mahasiswa</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="card" id="card">
+            <aside class="panel-left">
+                <div class="intro">
+                    <h1>Mulai dari data dirimu.</h1>
+                    <p>Isi beberapa informasi berikut untuk melengkapi pendaftaran.</p>
+                </div>
+                <span class="shape ring" aria-hidden="true"></span>
+                <span class="shape sun" aria-hidden="true"></span>
+            </aside>
+
+            <section class="panel-right">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input class="step-control" type="radio" name="wizard-step" id="step-1" value="1" aria-label="Langkah 1: Data diri" checked="checked" />
+                    <input class="step-control" type="radio" name="wizard-step" id="step-2" value="2" aria-label="Langkah 2: Akademik dan favorit" />
+                    <input class="step-control" type="radio" name="wizard-step" id="step-3" value="3" aria-label="Langkah 3: Tentang kamu" />
+
+                    <h2 class="step-title">
+                        <span class="step-heading step-heading-1">Data diri</span>
+                        <span class="step-heading step-heading-2">Akademik &amp; favorit</span>
+                        <span class="step-heading step-heading-3">Tentang kamu</span>
+                    </h2>
+                    <p class="subtitle">
+                        <span class="step-description step-description-1">Mulai dengan informasi dasar untuk akunmu.</span>
+                        <span class="step-description step-description-2">Isi informasi sekolah dan hal yang kamu suka.</span>
+                        <span class="step-description step-description-3">Terakhir, tulis sedikit cerita tentang dirimu.</span>
+                    </p>
+
+                    <div class="step-progress" aria-label="Progres pengisian formulir">
+                        <span class="step-count">
+                            <span class="step-count-1">Langkah 1 dari 3</span>
+                            <span class="step-count-2">Langkah 2 dari 3</span>
+                            <span class="step-count-3">Langkah 3 dari 3</span>
+                        </span>
+                        <div class="progress-track" aria-hidden="true">
+                            <span class="progress-fill"></span>
+                        </div>
+                        <div class="step-labels" aria-hidden="true">
+                            <span class="step-label step-label-1">Data diri</span>
+                            <span class="step-label step-label-2">Akademik &amp; favorit</span>
+                            <span class="step-label step-label-3">Tentang kamu</span>
+                        </div>
+                    </div>
+
+                    <section class="form-step form-step-1">
+                        <div class="field">
+                            <label for="namamhs">Nama mahasiswa</label>
+                            <input type="text" id="namamhs" name="namamhs" placeholder="Contoh: Budi Santoso" />
+                        </div>
+
+                        <div class="field">
+                            <span class="label">Jenis kelamin</span>
+                            <div class="choices two">
+                                <div class="choice">
+                                    <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                                    <label for="laki">Laki-laki</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field">
+                                <label for="prodi">Program studi</label>
+                                <select id="prodi" name="prodi">
+                                    <option>Informatika</option>
+                                    <option>Sistem Informasi</option>
+                                    <option>Teknik Industri</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="telepon">Nomor telepon</label>
+                                <input type="tel" id="telepon" name="telepon" placeholder="0812 3456 7890" />
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Alamat email</label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" />
+                        </div>
+
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" />
+                        </div>
+
+                        <div class="field">
+                            <label for="photo">Photo</label>
+                            <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+                        </div>
+                    </section>
+
+                    <section class="form-step form-step-2">
+                        <div class="field">
+                            <label for="namasmu">Nama sekolah asal</label>
+                            <input type="text" id="namasmu" name="namasmu" placeholder="Contoh: SMA Negeri 1 Boyolali" />
+                        </div>
+
+                        <div class="field">
+                            <span class="label">Musik favorit</span>
+                            <div class="choices">
+                                <div class="choice">
+                                    <input type="checkbox" id="musik1" name="musik" value="Pop" />
+                                    <label for="musik1">Pop</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="checkbox" id="musik2" name="musik" value="Rock" />
+                                    <label for="musik2">Rock</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="checkbox" id="musik3" name="musik" value="Jazz" />
+                                    <label for="musik3">Jazz</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <span class="label">Film favorit</span>
+                            <div class="choices">
+                                <div class="choice">
+                                    <input type="checkbox" id="film1" name="film" value="Drama" />
+                                    <label for="film1">Drama</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="checkbox" id="film2" name="film" value="Action" />
+                                    <label for="film2">Action</label>
+                                </div>
+                                <div class="choice">
+                                    <input type="checkbox" id="film3" name="film" value="Sci-Fi" />
+                                    <label for="film3">Sci-Fi</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-step form-step-3">
+                        <div class="field">
+                            <label for="resume">Ceritakan tentang dirimu</label>
+                            <textarea name="resume" id="resume" rows="6" cols="30" placeholder="Ceritakan singkat tentang dirimu"></textarea>
+                        </div>
+                    </section>
+                    <div class="form-navigation">
+                        <label class="btn-back nav-back-2" for="step-1">Kembali</label>
+                        <label class="btn nav-next-1" for="step-2">Lanjut</label>
+                        <label class="btn-back nav-back-3" for="step-2">Kembali</label>
+                        <label class="btn nav-next-2" for="step-3">Lanjut</label>
+                        <input type="submit" name="simpan" value="Simpan" class="btn nav-submit" />
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
